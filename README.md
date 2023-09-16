@@ -20,3 +20,5 @@ Create a comprehensive resume editor in LaTeX with an integrated uploader. Gener
 - [ ] Deploy the application.
 
 > Maybe move form resume to documents to
+
+https://luther.io/markdown-resume/
