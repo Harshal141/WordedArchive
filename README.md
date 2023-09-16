@@ -21,4 +21,6 @@ Create a comprehensive resume editor in LaTeX with an integrated uploader. Gener
 
 > Maybe move form resume to documents to
 
+## References
+https://www.npmjs.com/package/@uiw/react-md-editor
 https://luther.io/markdown-resume/

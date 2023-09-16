@@ -1,12 +1,18 @@
-import './App.css';
-import LiveMarkdown from './components/LiveMarkdown';
+import React from "react";
+import MDEditor from '@uiw/react-md-editor';
+import rehypeSanitize from "rehype-sanitize";
 
-function App() {
+export default function App() {
+  const [value, setValue] = React.useState(`**Hello world!!!**`);
   return (
-    <div className="App">
-      <LiveMarkdown />
+    <div className="container">
+      <MDEditor
+        value={value}
+        onChange={setValue}
+        previewOptions={{
+          rehypePlugins: [[rehypeSanitize]],
+        }}
+      />
     </div>
   );
 }
-
-export default App;
