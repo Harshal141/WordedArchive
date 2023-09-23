@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: #262837 !important;
+}
+
+/* md editor css override */
+
+.w-md-editor{
+    border-radius: 19px 19px 0px 19px ;
+}
+
+.w-md-editor-toolbar{
+    border-radius: 19px 19px 0 0;
+}
