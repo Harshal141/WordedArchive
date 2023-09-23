@@ -9,9 +9,33 @@ body{
 /* md editor css override */
 
 .w-md-editor{
+    height: 80vh !important;
     border-radius: 19px 19px 0px 19px ;
+    padding: 0px;
+    background-color: transparent !important;
 }
 
+.w-md-editor-content{
+    background-color: #343549 !important;
+    border-bottom-left-radius: 19px;
+}
+
+/* tool bar settings */
+
 .w-md-editor-toolbar{
+    background-color: #2F3044;
     border-radius: 19px 19px 0 0;
+    padding: 16px;
+}
+
+.w-md-editor-toolbar ul li button{
+    margin: 4px;
+}
+
+.w-md-editor-toolbar ul li button svg{
+    color: #92929D;
+}
+
+.wmde-markdown{
+    background-color: transparent;
 }

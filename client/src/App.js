@@ -10,7 +10,7 @@ export default function App() {
   return (
     <>
       <Navbar />
-      <div className="m-4">
+      <div className="m-10">
       <MDEditor
         value={value}
         onChange={setValue}
