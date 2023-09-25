@@ -1,4 +1,3 @@
-import { backtick } from 'pdf-lib'
 import React from 'react'
 
 export const Navbar = () => {
