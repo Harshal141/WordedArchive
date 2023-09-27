@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 import MDEditor from '@uiw/react-md-editor';
-import rehypeSanitize from 'rehype-sanitize';
-import './App.css';
-import {Navbar} from './components/navbar';
+import rehypeSanitize from "rehype-sanitize";
+import "./App.css";
+import {Navbar} from "./components/navbar";
 
 export default function App() {
   const [value, setValue] = React.useState(`👋 **Hello!** You can edit the .md code here`);
@@ -11,13 +11,13 @@ export default function App() {
     <>
       <Navbar />
       <div className="m-10">
-        <MDEditor
-          value={value}
-          onChange={setValue}
-          previewOptions={{
-            rehypePlugins: [[rehypeSanitize]],
-          }}
-        />
+      <MDEditor
+        value={value}
+        onChange={setValue}
+        previewOptions={{
+          rehypePlugins: [[rehypeSanitize]],
+        }}
+      />
       </div>
     </>
   );
