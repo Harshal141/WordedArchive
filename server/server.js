@@ -1,7 +1,21 @@
+const path = require('path');
 const express = require('express');
 const app = express();
 const port = 5000;
 const multer = require('multer');
+
+const options = {
+  dotfiles: 'ignore',
+  etag: false,
+  extensions: ['htm', 'html'],
+  maxAge: '1d',
+  redirect: false,
+  setHeaders: function(res, path, stat) {
+      res.set('x-timestamp', Date.now());
+  },
+};
+
+app.use(express.static(path.join(__dirname, '../client/build'), options));
 
 // Create a variable to hold the custom filename
 let customFilename = '';
