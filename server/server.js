@@ -3,6 +3,9 @@ const express = require('express');
 const app = express();
 const port = 5000;
 const multer = require('multer');
+const connectDB = require('./config/db');
+
+connectDB();
 
 const options = {
   dotfiles: 'ignore',

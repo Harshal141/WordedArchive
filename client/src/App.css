@@ -23,7 +23,7 @@ body{
 /* tool bar settings */
 
 .w-md-editor-toolbar{
-    background-color: #2F3044;
+    background-color: #2F3044 !important;
     border-radius: 19px 19px 0 0;
     padding: 16px;
 }
@@ -37,5 +37,11 @@ body{
 }
 
 .wmde-markdown{
-    background-color: transparent;
+    background-color: transparent !important;
+}
+.w-md-editor-preview{
+    border-left: 10px solid #2F3044;
+}
+.w-md-editor-bar{
+    display: none;
 }
