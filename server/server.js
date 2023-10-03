@@ -1,11 +1,10 @@
-const path = require('path');
 const express = require('express');
 const app = express();
-const port = 5000;
+
+const path = require('path');
 const multer = require('multer');
 const connectDB = require('./config/db');
-
-connectDB();
+const dotenv = require('dotenv').config();
 
 const options = {
   dotfiles: 'ignore',
@@ -18,7 +17,8 @@ const options = {
   },
 };
 
-app.use(express.static(path.join(__dirname, '../client/build'), options));
+connectDB();
+// app.use(express.static(path.join(__dirname, '../client/build'), options));
 
 // Create a variable to hold the custom filename
 let customFilename = '';
@@ -56,6 +56,7 @@ app.post('/upload', (req, res) => {
   });
 });
 
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });

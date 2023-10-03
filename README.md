@@ -25,6 +25,7 @@ Create a comprehensive resume editor in MarkDown with an integrated uploader. Ge
 ## References
 https://www.npmjs.com/package/@uiw/react-md-editor
 https://luther.io/markdown-resume/
+
 FIGMA : https://www.figma.com/file/o3nAw6l9zkSxW0yVe963Q9/Project-Den?type=design&node-id=804%3A163&mode=design&t=kLSRMIjvokeSesFF-1
 
 ## Contributers
