@@ -1,24 +1,20 @@
 import React from "react";
-import MDEditor from '@uiw/react-md-editor';
-import rehypeSanitize from "rehype-sanitize";
 import "./App.css";
-import {Navbar} from "./components/navbar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
+import Profile from "./components/Profile";
+import Explore from "./components/Explore";
 
 export default function App() {
-  const [value, setValue] = React.useState(`👋 **Hello!** You can edit the .md code here`);
-
   return (
     <>
-      <Navbar />
-      <div className="m-10">
-      <MDEditor
-        value={value}
-        onChange={setValue}
-        previewOptions={{
-          rehypePlugins: [[rehypeSanitize]],
-        }}
-      />
-      </div>
+      <Router>
+        <Routes>
+          <Route path="/" index element={<Home />} />
+          <Route path="/dashboard" element={<Profile />} />
+          <Route path="/community" element={<Explore />} />
+        </Routes>
+      </Router>
     </>
   );
 }
