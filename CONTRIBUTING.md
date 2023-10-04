@@ -42,7 +42,7 @@ If you'd like to contribute code or documentation changes, you can submit a pull
    
    ``` git push ```
    
-6. Open a pull request from your branch to our repository's master branch.<br>
+6. Open a pull request from your branch to our repository's `master` branch.<br>
    After the commit ,you will find a pull request button ,click on the pull request and make your Pull request with concise message.<br>
 We will review your PR and provide feedback. Once your contribution is approved, it will be merged into the project.
 
@@ -52,6 +52,14 @@ If you plan to contribute code, follow these steps to set up your development en
 
 1. Clone the repository.
 2. Start the development of the project.
+
+### Local Deployment 
+After cloning anf forking the project, you can run it locally :
+Firstly install the dependencies.
+
+``` npm install ```
+
+``` npm start ```
 
 Thank you for your interest in contributing to ResumeWorded ! We welcome contributions from the community and appreciate your help in making our project better.
 
