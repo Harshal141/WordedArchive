@@ -27,6 +27,9 @@ Create a comprehensive resume editor in MarkDown with an integrated uploader. Ge
 - [ ] Create user documentation.
 - [ ] Deploy the application.
 
+### Objectives
+- [ ] Get listed on `good-first-issue`
+
 ## References
 https://www.npmjs.com/package/@uiw/react-md-editor
 https://luther.io/markdown-resume/
