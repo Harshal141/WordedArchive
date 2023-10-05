@@ -1,9 +1,9 @@
 import React from "react";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Explore from "./components/Explore";
 import Home from "./components/Home";
 import Profile from "./components/Profile";
-import Explore from "./components/Explore";
 import Resume from "./pages/Resume/Resume";
 
 export default function App() {
