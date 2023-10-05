@@ -1,6 +1,9 @@
 # Resume Worded (Name needs to be changed)
 > Any suggestions for the new name for this project are welcome.
+
 Create a comprehensive resume editor in MarkDown with an integrated uploader. Generate shareable links for your resume page and simplify the process of updating your resume without the need to re-upload it. Say goodbye to the hassle of repeatedly uploading your resume to Google Drive and replacing files each time you make updates.
+
+Read [CONTRIBUTING.md](https://github.com/Harshal141/ResumeWorded/blob/master/CONTRIBUTING.md) to learn how you can become a contributor.
 
 ## To-Do List
 ### Phase 1
