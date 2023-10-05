@@ -1,65 +1,75 @@
 # Contribute to ResumeWorded
 
-Welcome to ResumeWorded ! We're excited that you're interested in contributing. Please take a moment to read this guide to understand how you can contribute to the project !
+Welcome to ResumeWorded! We're excited that you're interested in contributing. Please take a moment to read this guide to understand how you can contribute to the project.
 
-## Code of Conduct 
+## Code of Conduct
 
-Before you start contributing, We expect all contributors to follow these guidelines to create a respectful and inclusive environment for everyone.
+Before you start contributing, we expect all contributors to follow the [guidelines](https://opensource.guide/) to create a respectful and inclusive environment for everyone.
 
-## How to Contribute ?
+## How to Contribute
 
-### Submitting an issue :-
+### Submitting an Issue
 
-If you feel ,there's any bug or feature improvement Please raise an issue.
-We are here to improve 🙌
+If you've found a bug or have a feature improvement in mind, please raise an issue. We are here to improve! 🙌
 
-### Submitting Pull Request :-
+## How Tasks Are Assigned
+Tasks in our project are assigned to contributors to ensure efficient collaboration. Here's how it works:
+- **Comment on Existing Issues**: If you're interested in working on a particular issue, you can comment on it to express your willingness. Our moderators will review your request and assign the task to you if you have the capability.
+- **Create a New Issue**: If you have identified a bug or have a new feature in mind that you'd like to implement, please create a new issue for it. Once you've created the issue, wait for moderator approval before starting work on it.
+- **Important Note**: If you are assigned an issue, it's crucial to set a due date for the completion of the task. This helps us track progress and ensure timely delivery.
+
+### Submitting a Pull Request
+
 If you'd like to contribute code or documentation changes, you can submit a pull request (PR) to our repository. Here's how:
 
 1. Fork the repository to your GitHub account.
-   1. Click the fork button on the repository.
-![image](https://github.com/ira-mane/ResumeWorded/assets/108334485/e70f1422-e9eb-4f07-8500-a887ba101a52)
-  
-   2. Click Create Fork button below down.
-   3. Copy the ssh clone url.
-      
-  ssh clone url :- ``` https://github.com/Harshal141/ResumeWorded.git  ```
-   
+   - Click the "Fork" button on the repository.
+
 2. Clone your forked repository to your local machine.
-   1. Cloning the forking repository using git clone command.
+   - Use the `git clone` command with the SSH clone URL.
+   - Example: `git clone https://github.com/YourUsername/ResumeWorded.git`
 
-   ``` git clone https://github.com/Harshal141/ResumeWorded.git ```
-      
 3. Create a new branch for your changes.
-   
-   ``` git branch <new-branch> ```
-   
-4. Make your changes and commit them with clear, concise commit messages.
-   
-   ``` git commit -m"Add your commit message" ```
-   
-5. Push your branch to your forked repository.
-   
-   ``` git push ```
-   
-6. Open a pull request from your branch to our repository's `master` branch.<br>
-   After the commit ,you will find a pull request button ,click on the pull request and make your Pull request with concise message.<br>
-We will review your PR and provide feedback. Once your contribution is approved, it will be merged into the project.
+   - Use the `git branch` command to create a new branch for your work.
 
-## Development Environment setup
+4. Make your changes and commit them with clear, concise commit messages.
+   - Example: `git commit -m "Add your commit message"`
+
+5. Push your branch to your forked repository.
+   - Use `git push` to upload your changes.
+
+6. Open a pull request from your branch to our repository's `master` branch.
+   - After the commit, you will find a "Pull Request" button. Click it and submit your PR with a concise message.
+   - We will review your PR and provide feedback. Once approved, it will be merged into the project.
+
+## Development Environment Setup
 
 If you plan to contribute code, follow these steps to set up your development environment:
 
-1. Clone the repository.
-2. Start the development of the project.
+### Genral Understanding of project
+The project has both the backend and frontend in the same repository.
+- `client` : React App
+- `server` : Express Server
 
-### Local Deployment 
-After cloning anf forking the project, you can run it locally :
-Firstly install the dependencies.
+### Local Deployment
 
-``` npm install ```
+After cloning and forking the project, you can run it locally:
 
-``` npm start ```
+1. Install the dependencies.
+```bash
+npm install --prefix client
+npm install --prefix server
+npm install
+```
 
-Thank you for your interest in contributing to ResumeWorded ! We welcome contributions from the community and appreciate your help in making our project better.
+2. Running the project.
+```bash
+// Starting react app
+npm run client
+// Starting the server
+npm run server
+// Starting Both simultaneoulsy
+npm run dev 
+```
 
+Thank you for your contributions. 😎
