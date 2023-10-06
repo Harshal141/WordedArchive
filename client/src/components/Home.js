@@ -1,7 +1,7 @@
 import React from "react";
 import MDEditor from "@uiw/react-md-editor";
 import rehypeSanitize from "rehype-sanitize";
-import Navbar from "./Navbar";
+import Navbar from "./navbar";
 
 const Home = () => {
   const [value, setValue] = React.useState(
