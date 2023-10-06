@@ -1,7 +1,8 @@
 import React from "react";
 import MDEditor from "@uiw/react-md-editor";
 import rehypeSanitize from "rehype-sanitize";
-import Navbar from "./Navbar";
+import Navbar from './Navbar'
+
 
 const Home = () => {
   const [value, setValue] = React.useState(
@@ -9,7 +10,7 @@ const Home = () => {
   );
   return (
     <>
-      <Navbar />
+      <Navbar/>
       <div className="m-10">
         <MDEditor
           value={value}
