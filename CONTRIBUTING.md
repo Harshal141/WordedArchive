@@ -47,29 +47,11 @@ If you'd like to contribute code or documentation changes, you can submit a pull
 If you plan to contribute code, follow these steps to set up your development environment:
 
 ### Genral Understanding of project
-The project has both the backend and frontend in the same repository.
-- `client` : React App
-- `server` : Express Server
+
+= TODO
 
 ### Local Deployment
 
-After cloning and forking the project, you can run it locally:
-
-1. Install the dependencies.
-```bash
-npm install --prefix client
-npm install --prefix server
-npm install
-```
-
-2. Running the project.
-```bash
-// Starting react app
-npm run client
-// Starting the server
-npm run server
-// Starting Both simultaneoulsy
-npm run dev 
-```
+= TODO
 
 Thank you for your contributions. 😎
